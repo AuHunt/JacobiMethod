@@ -1,6 +1,4 @@
 /*
-   CS288 HOMEWORK 8
-   Your program will take in two command-line parameters: n and error
    command: jacobi 5 0.0001
    command: jacobi 10 0.000001
  */
@@ -69,11 +67,10 @@ int convergence(int iter) {
     return flag;
 }
 
-// Try not to change this. Use it as is.
 void init(char **argv){
     int i,j,k,flag=0;
     float sum;
-    int seed = time(0) % 100;	/* seconds since 1/1/1970 */
+    int seed = time(0) % 100;
 
     srand(seed);
     for (i=0;i<n;i++) {
@@ -114,5 +111,3 @@ void print_vector(float *l){
     for (i=0; i<n; i++) printf("%.6f ",l[i]);
     printf("\n");
 }
-
-// end of file
